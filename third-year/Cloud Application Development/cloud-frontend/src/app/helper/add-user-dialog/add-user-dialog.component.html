@@ -1,0 +1,25 @@
+<div class="user-creation-container">
+  <form>
+    <mat-form-field>
+      <input type="text"
+             placeholder="Select user to add"
+             aria-label="Number"
+             matInput
+             [formControl]="addUserControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let user of filteredUsers | async" [value]="user.userName">
+          {{user.userName}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <div class="add-button-container">
+      <button mat-mini-fab color="warn" (click)="onNoClick()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+      <button mat-mini-fab [mat-dialog-close]="addUserControl.value">
+        <mat-icon>group_add</mat-icon>
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,13 @@
+.add-room-label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-room-control {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.button-spacing {
+  margin-left: 1rem;
+}

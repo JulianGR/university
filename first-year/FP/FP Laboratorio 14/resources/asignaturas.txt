@@ -1,0 +1,21 @@
+1234567#Fundamentos de Programacion#12.0#ANUAL#1
+ 2050001#Fundamentos de Programacion# 12.0# ANUAL# 1
+ 2050002#Calculo Infinitesimal y Numerico# 6.0# PRIMER_CUATRIMESTRE# 1
+ 2050003#Circuitos Electronicos Digitales# 6.0# PRIMER_CUATRIMESTRE# 1
+2050004#Fundamentos Fisicos de la Informatica#6.0# PRIMER_CUATRIMESTRE# 1
+2050005#Introduccion a la Matematica Discreta#6.0# PRIMER_CUATRIMESTRE# 1
+ 2050006#Administracion de Empresas# 6.0# SEGUNDO_CUATRIMESTRE# 1
+ 2050007#Algebra Lineal y Numerica# 6.0# SEGUNDO_CUATRIMESTRE# 1
+ 2050008#Estadistica# 6.0# SEGUNDO_CUATRIMESTRE# 1
+ 2050009#Estructura de Computadores# 6.0# SEGUNDO_CUATRIMESTRE# 1
+ 2050010#Analisis y Dis de Datos y Algoritmos# 12.0# ANUAL# 2
+ 2050011#Introduccion a la Ingenieria del Software# 12.0# ANUAL# 2
+ 2050012#Logica Informatica# 6.0# PRIMER_CUATRIMESTRE# 2
+ 2050013#Redes de Computadores# 6.0# PRIMER_CUATRIMESTRE# 2
+ 2050014#Sistemas Operativos# 6.0# PRIMER_CUATRIMESTRE# 2
+ 2050015#Arquitectura de Computadores# 6.0# SEGUNDO_CUATRIMESTRE# 2
+2050016#Arquitectura e Integracion de Sistemas#6.0#SEGUNDO_CUATRIMESTRE#2
+ 2050017#Matematica Discreta# 6.0# SEGUNDO_CUATRIMESTRE# 2
+ 1234567#Fundamentos de Programacion#12.0#ANUAL#1
+ 2050009#Estructura de Computadores# 6.0# SEGUNDO_CUATRIMESTRE# 1
+ 2050010#Analisis y Dis de Datos y Algoritmos# 12.0# ANUAL# 2

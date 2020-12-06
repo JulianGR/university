@@ -1,0 +1,10 @@
+database/data/
+.DS_Store
+Thumbs.db
+_Thumbs.db
+desktop.ini
+
+
+cloud-frontend/node_modules
+.idea
+cloud-backend/.deno_plugins

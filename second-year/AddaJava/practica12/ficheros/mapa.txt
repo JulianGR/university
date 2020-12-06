@@ -1,0 +1,14 @@
+#VERTEX#
+Estacion0
+Estacion1
+Estacion2
+Estacion3
+#EDGE#
+Estacion0,Estacion1,15.
+Estacion0,Estacion3,50.
+Estacion1,Estacion0,15.
+Estacion1,Estacion2,5.
+Estacion2,Estacion1,5.
+Estacion2,Estacion3,20.
+Estacion3,Estacion1,5.
+Estacion3,Estacion2,20.

@@ -1,0 +1,68 @@
+<div class="server-overview-container">
+  <div class="server-details-container" *ngFor="let server of ownedServer">
+    <div class="server-details-header">
+      <div class="server-details-label">
+        Name: {{server.name}}
+      </div>
+      <div>
+        <button mat-raised-button color="primary" (click)="createPremiumRoom(server._id)">
+          Create Room
+        </button>
+      </div>
+    </div>
+    <div class="rooms-container">
+      <div class="room-detail-container" *ngFor="let room of server.rooms">
+        <div class="room-detail-control-container">
+          <div class="room-detail-label">Name: {{room.roomName}}</div>
+          <button class="delete-user-button" mat-icon-button color="warn"
+                  #tooltip="matTooltip" matTooltip="Remove room"
+                  (click)="deleteRoomFromServer(server._id, room.roomName)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <div class="user-list-label">Participants:</div>
+        <div class="user-container">
+          <div class="user-details-container" *ngFor="let user of room.users">
+            <div class="user-name-label">{{user.firstName + ' ' + user.lastName}}</div>
+            <button class="delete-user-button" mat-icon-button color="warn"
+                    #tooltip="matTooltip" matTooltip="Remove participant"
+                    (click)="deleteUserFromRoom(server._id, room.roomName, user._id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="room-detail-button-container">
+          <button mat-raised-button (click)="openAddUserDialog(server._id, room.roomName, room.users)">
+            Add user to room
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-list-container" *ngIf="ownedServer?.length === 0">
+    <div>
+      You are not a premium customer yet.
+      <a mat-raised-button color="primary" routerLink="/payment" href="#"> Click here </a>
+      to become one today!
+    </div>
+  </div>
+  <!--
+    <div class="tenant-container" *ngIf="user?.isTenant">
+    <p>Your premium rooms:</p>
+    <div class="room-creation-container">
+      <p>Create new Room:</p>
+      <form class="center-form" [formGroup]="createPremiumRoomForm" (ngSubmit)="createPremiumRoom()">
+        <div>
+          <label for="roomName">Name of the room: </label>
+          <input type="text" id="roomName" formControlName="roomName"><br><br>
+        </div>
+        <button type="submit">
+          Create new room
+        </button>
+      </form>
+    </div>
+  </div>
+  -->
+</div>

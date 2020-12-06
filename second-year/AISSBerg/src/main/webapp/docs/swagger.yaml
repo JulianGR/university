@@ -1,0 +1,262 @@
+---
+swagger: "2.0"
+info:
+  description: API de AISSBerg para la asignatura de AISS
+  version: 1.0.0
+  title: AISSBerg Application
+  contact:
+    email: aissberg27@gmail.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+host: virtserver.swaggerhub.com
+basePath: /aissberg27/AISSBergApplication/1.0.0
+schemes:
+- https
+paths:
+  /city:
+    get:
+      tags:
+      - city
+      summary: búsqueda por ciudad
+      description: |
+        Puedes buscar por ciudad
+      operationId: getAllCities
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/City'
+    post:
+      tags:
+      - city
+      summary: añade una ciudad
+      description: añade una ciudad
+      operationId: addCity
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: city
+        description: ciudad a añadir
+        required: false
+        schema:
+          $ref: '#/definitions/City'
+      responses:
+        201:
+          description: item created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing item already exists
+    put:
+      tags:
+      - city
+      summary: actualiza una ciudad
+      description: actualiza una ciudad
+      operationId: updateCity
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: city
+        description: ciudad a añadir
+        required: false
+        schema:
+          $ref: '#/definitions/City'
+      responses:
+        201:
+          description: item created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing item already exists
+  /city/{cityName}:
+    get:
+      tags:
+      - city
+      summary: búsqueda por nombre de ciudad
+      description: |
+        Puedes buscar por ciudad
+      operationId: getCity
+      produces:
+      - application/json
+      parameters:
+      - name: cityName
+        in: path
+        description: nombre de la ciudad a buscar
+        required: true
+        type: string
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/City'
+  /person:
+    get:
+      tags:
+      - person
+      summary: búsqueda por persona
+      description: |
+        Devuelve todas las personas
+      operationId: getAllPeople
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Person'
+    post:
+      tags:
+      - person
+      summary: añade una persona
+      description: añade una persona
+      operationId: addPerson
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: person
+        description: persona a añadir
+        required: false
+        schema:
+          $ref: '#/definitions/Person'
+      responses:
+        201:
+          description: item created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing item already exists
+    put:
+      tags:
+      - person
+      summary: actualiza una persona
+      description: actualiza una persona
+      operationId: updatePerson
+      consumes:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: persona a actualizar
+        required: false
+        schema:
+          $ref: '#/definitions/Person'
+      responses:
+        400:
+          description: Invalid ID supplied
+        404:
+          description: City not found
+        405:
+          description: Validation exception
+  /person/{personId}:
+    get:
+      tags:
+      - person
+      summary: búsqueda por persona
+      description: |
+        búsqueda por persona
+      operationId: getById
+      produces:
+      - application/json
+      parameters:
+      - name: personId
+        in: path
+        description: id de la persona a buscar
+        required: true
+        type: string
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/City'
+  /{personId}/{cityName}:
+    post:
+      tags:
+      - person
+      summary: post para añadir una persona a una ciudad
+      description: |
+        post para añadir una persona a una ciudad
+      operationId: addPersonToCity
+      produces:
+      - application/json
+      parameters:
+      - name: personId
+        in: path
+        description: ID de la persona a buscar
+        required: true
+        type: string
+      - name: cityName
+        in: path
+        description: nombre de la ciudad a buscar
+        required: true
+        type: string
+      - in: body
+        name: person
+        required: false
+        schema:
+          $ref: '#/definitions/Person'
+      responses:
+        200:
+          description: search results matching criteria
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Person'
+definitions:
+  City:
+    type: object
+    required:
+    - country
+    - name
+    - people
+    properties:
+      name:
+        type: string
+        example: Sevilla
+      country:
+        type: string
+        example: ES
+      people:
+        type: array
+        items:
+          $ref: '#/definitions/Person'
+  Person:
+    required:
+    - email
+    - id
+    - name
+    - phone
+    properties:
+      id:
+        type: string
+        example: "12"
+      name:
+        type: string
+        example: Pepito
+      email:
+        type: string
+        example: acme@shout.com
+      phone:
+        type: string
+        example: "666000333"

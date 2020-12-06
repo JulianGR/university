@@ -1,0 +1,110 @@
+.server-overview-container {
+
+}
+
+.server-details-container {
+}
+
+.server-details-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  margin-bottom: 2rem;
+}
+
+.server-details-label {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+:host::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+:host::ng-deep .mat-form-field-underline {
+  bottom: 0;
+}
+
+.center-button {
+
+}
+
+.room-detail-control-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rooms-container {
+  display: grid;
+  padding: 0 2rem;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: auto;
+  column-gap: 2%;
+  row-gap: 3%;
+}
+
+.room-detail-container {
+  border: 1px solid gray;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+.room-detail-label{
+  place-self: center;
+  font-size: 1.2rem
+}
+
+.user-list-label{
+  margin: 0.5rem 5%;
+  font-size: 1.0rem
+}
+
+.user-container {
+  display: grid;
+  margin: 0 5%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: 2%;
+  row-gap: 3%;
+}
+
+.user-details-container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid aliceblue;
+  border-radius: 5rem;
+}
+
+.delete-user-button{
+  font-size: 1.2rem;
+}
+
+.user-name-label{
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+}
+
+.room-detail-button-container{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.6rem 5% 0.3rem 0.3rem;
+}
+
+.user-creation-container {
+
+}
+
+.add-button-container {
+
+}
+
+
+.empty-list-container {
+  font-size: 1rem;
+  color: lightcoral;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+

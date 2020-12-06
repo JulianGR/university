@@ -1,0 +1,25 @@
+<div class="room-overview-container">
+  <div class="server-container">
+    <div class="server-info-container" *ngFor="let server of serverArray">
+      <h3>Servername: {{server.name}}</h3>
+      <div class="rooms-container">
+        <div class="room-detail-container" *ngFor="let room of server.rooms">
+          <div class="room-detail-label">Name: {{room.roomName}}</div>
+        <div class="user-container">
+          <div class="user-details-container" *ngFor="let user of room.users">
+            <div class="user-name-label">{{user.firstName + ' ' + user.lastName}}</div>
+          </div>
+        </div>
+          <div class="submit-container">
+            <button mat-raised-button color="primary" (click)="joinPremiumRoom(server._id, server.location, server.name, room.roomName)">Click to join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="empty-list-container" *ngIf="serverArray.length === 0">
+      <div>
+        You haven't been invited to a premium room yet
+      </div>
+    </div>
+  </div>
+</div>

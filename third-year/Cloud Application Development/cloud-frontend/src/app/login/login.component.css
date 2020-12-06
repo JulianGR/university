@@ -1,0 +1,21 @@
+.login-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.center-form {
+  place-self: center;
+}
+
+.button-spacing {
+  margin-left: 1rem;
+}
+
+.login-form-controls {
+  display: flex;
+  justify-content: flex-end;
+}

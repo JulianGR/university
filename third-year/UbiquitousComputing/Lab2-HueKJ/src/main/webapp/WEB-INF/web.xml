@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<!-- Fichero de bienvenida -->
+	<welcome-file-list>
+		<welcome-file>Index</welcome-file>
+	</welcome-file-list>
+
+	<!-- Index -->
+	<servlet>
+		<description></description>
+		<display-name>Index</display-name>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>aiss.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/Index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MapasController</display-name>
+		<servlet-name>MapasController</servlet-name>
+		<servlet-class>aiss.controller.all.MapasController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MapasController</servlet-name>
+		<url-pattern>/MapasController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>BulbsController</display-name>
+		<servlet-name>BulbsController</servlet-name>
+		<servlet-class>aiss.controller.all.BulbsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BulbsController</servlet-name>
+		<url-pattern>/BulbsController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>BulbsController2</display-name>
+		<servlet-name>BulbsController2</servlet-name>
+		<servlet-class>aiss.controller.all.BulbsController2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BulbsController2</servlet-name>
+		<url-pattern>/BulbsController2</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Fichero de error -->
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+</web-app>

@@ -1,0 +1,23 @@
+<nav mat-tab-nav-bar [backgroundColor]="background" *ngIf="isAuthorized()">
+  <a mat-tab-link *ngFor="let link of links"
+     routerLink="{{link.routerLink}}"
+     href="#"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive"
+  > {{link.routerLabel}} </a>
+  <div class="non-route-container">
+    <div class="user-label">
+      Welcome {{this.userName}}!
+    </div>
+    <button mat-raised-button color="primary" (click)="logOut()">Logout</button>
+  </div>
+</nav>
+<nav mat-tab-nav-bar [backgroundColor]="background" *ngIf="!isAuthorized()">
+  <a mat-tab-link *ngFor="let link of unauthorizedLinks"
+     routerLink="{{link.routerLink}}"
+     href="#"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive"
+  > {{link.routerLabel}} </a>
+</nav>
+<router-outlet></router-outlet>

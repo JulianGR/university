@@ -1,0 +1,66 @@
+<div class="payment-container" *ngIf="!isTenant">
+  <div class="center-form">
+    <mat-expansion-panel hideToggle>
+      <!-- #enddocregion hide-toggle -->
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Buy a premium server today!
+        </mat-panel-title>
+        <mat-panel-description>
+          Further information
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        Premium rooms can only be accessed by authorized users <br>
+        Monthly cost are only 5$ per month
+      </div>
+    </mat-expansion-panel>
+  </div>
+  <div class="center-form">
+  <form [formGroup]="tenantForm" (ngSubmit)="subscribe()">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Servername</mat-label>
+        <input matInput formControlName="serverName" type="text">
+        <mat-icon matSuffix>add_to_queue</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="center-container">
+      <mat-form-field appearance="outline">
+        <mat-label>Payment option</mat-label>
+        <select matNativeControl name="payment" id="payment-select">
+          <option value="paypal">PayPal</option>
+          <option value="creditcard">Credit Card</option>
+          <option value="bitcoin">Bit Coin</option>
+        </select>
+      </mat-form-field>
+    </div>
+    <div class="center-container">
+      <button mat-raised-button color="primary" type="submit">
+        Buy now!
+      </button>
+    </div>
+  </form>
+  </div>
+</div>
+<div class="unsubscribe-container" *ngIf="isTenant">
+  <div class="center-form">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          You are subscribed
+        </mat-panel-title>
+        <mat-panel-description>
+          Further information
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        You are currently subscribed to our premium service <br>
+        Monthly cost totals to 5$! <br>
+      </div>
+    </mat-expansion-panel>
+  </div>
+  <div class="center-form">
+    <button mat-raised-button color="warn" (click)="unsubscribe()">Unsubscribe</button>
+  </div>
+</div>

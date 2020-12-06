@@ -1,0 +1,24 @@
+.payment-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+
+.unsubscribe-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.center-form {
+  place-self: center;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}

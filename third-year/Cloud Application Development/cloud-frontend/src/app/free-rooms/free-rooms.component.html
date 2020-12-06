@@ -1,0 +1,35 @@
+<div class="free-room-container">
+  <div class="center-form">
+    <mat-expansion-panel hideToggle>
+      <!-- #enddocregion hide-toggle -->
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          You are about to join a free room
+        </mat-panel-title>
+        <mat-panel-description>
+          Further information
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="join-info-warning">Warning! Free rooms can be joined by anyone.</div>
+     If you wish to have dedicated privacy, consider becoming a premium member.
+    </mat-expansion-panel>
+  </div>
+  <div class="center-form">
+    <form [formGroup]="freeRoomForm" (ngSubmit)="joinPremiumRoom()">
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Roomcode</mat-label>
+          <input matInput formControlName="roomCode" pattern="[0-9]{4}" maxlength="4">
+          <mat-icon matSuffix>room</mat-icon>
+          <mat-hint>Four digit number</mat-hint>
+        </mat-form-field>
+      </div>
+      <div class="submit-container">
+        <button type="submit" mat-raised-button color="primary">
+          Join selected Room
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>

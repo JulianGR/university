@@ -1,0 +1,24 @@
+.free-room-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 5%;
+}
+
+
+.center-form {
+  place-self: center;
+}
+
+.submit-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.join-info-warning{
+  color: lightcoral;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

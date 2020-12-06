@@ -1,0 +1,1 @@
+Be sure to Retarget the project to the latest Windows SDK

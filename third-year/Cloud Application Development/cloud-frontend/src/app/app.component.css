@@ -1,0 +1,11 @@
+.user-label{
+  place-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.non-route-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}

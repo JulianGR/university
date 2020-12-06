@@ -1,0 +1,13 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "env": {
+    "SECRET": "CLOUD_DEVELOPMENT"
+  },
+  "scripts": {
+    "start": {
+      "cmd": "deno run --allow-write --allow-read --allow-net --allow-env --unstable --allow-plugin app.ts",
+      "desc": "run my app.ts file"
+    }
+  }
+}
+

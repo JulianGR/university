@@ -1,0 +1,46 @@
+root@Edison09:~# rfkill unblock bluetooth
+
+root@Edison09:~# bluetoothctl 
+
+[NEW] Controller 98:4F:EE:03:C2:13 
+Edison09 [default]
+[bluetooth]# agent on 
+Agent registered
+
+[bluetooth]# default-agent 
+Default agent request successful
+
+[bluetooth]# power on 
+Changing power on succeeded
+
+[bluetooth]# discoverable on
+ Changing discoverable on succeeded
+
+[CHG] Controller 98:4F:EE:03:C2:13 Discoverable: yes
+
+[bluetooth]# pairable on 
+Changing pairable on succeeded
+
+[bluetooth]# scan on 
+Discovery started
+
+[NEW] Device D0:27:88:84:09:5F Wireless Controller
+
+[bluetooth]# pair D0:27:88:84:09:5F 
+Attempting to pair with D0:27:88:84:09:5F
+
+[CHG] Device D0:27:88:84:09:5F Connected: yes
+
+[agent] Authorize service 00001124-0000-1000-8000-00805f9b34fb (yes/no): yes
+
+[Wireless Controller]# trust D0:27:88:84:09:5F
+
+[CHG] Device D0:27:88:84:09:5F Trusted: yes 
+Changing D0:27:88:84:09:5F trust succeeded
+
+[Wireless Controller]# connect D0:27:88:84:09:5
+F
+Attempting to connect to D0:27:88:84:09:5F
+
+[Wireless Controller]# info D0:27:88:84:09:5F
+

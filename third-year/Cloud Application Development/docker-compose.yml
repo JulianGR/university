@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+
+  backend:
+    build:
+      context: ./cloud-backend
+      dockerfile: BackendDocker.dockerfile
+    network_mode: "host"
+
+  database:
+    image: 'mongo'
+    volumes:
+      - './database:/data'
+    ports:
+      - '27017:27017'

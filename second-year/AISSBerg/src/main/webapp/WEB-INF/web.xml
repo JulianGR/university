@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<!-- Fichero de bienvenida -->
+	<welcome-file-list>
+		<welcome-file>Index</welcome-file>
+	</welcome-file-list>
+
+	<!-- Index -->
+	<servlet>
+		<description></description>
+		<display-name>Index</display-name>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>aiss.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/Index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>SearchCityController</display-name>
+		<servlet-name>SearchCityController</servlet-name>
+		<servlet-class>aiss.controller.all.SearchCityController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchCityController</servlet-name>
+		<url-pattern>/SearchCityController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MapasController</display-name>
+		<servlet-name>MapasController</servlet-name>
+		<servlet-class>aiss.controller.all.MapasController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MapasController</servlet-name>
+		<url-pattern>/MapasController</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<description></description>
+		<display-name>FoursquareController</display-name>
+		<servlet-name>FoursquareController</servlet-name>
+		<servlet-class>aiss.controller.all.FoursquareController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoursquareController</servlet-name>
+		<url-pattern>/FoursquareController</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Fichero de error -->
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+
+
+	<!-- Para la api, estará con el prefijo /api -->
+	<context-param>
+		<param-name>resteasy.servlet.mapping.prefix</param-name>
+		<param-value>/api</param-value>
+	</context-param>
+
+	<!-- Servlets de la api -->
+	<servlet>
+		<servlet-name>Resteasy</servlet-name>
+		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>aiss.api.AISSBergApplication</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Resteasy</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+</web-app>

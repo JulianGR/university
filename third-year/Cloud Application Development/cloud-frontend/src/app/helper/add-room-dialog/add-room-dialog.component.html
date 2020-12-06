@@ -1,0 +1,22 @@
+<div class="add-room-container">
+  <form [formGroup]="privateForm">
+    <div class="add-room-label">
+       Create a new room:
+    </div>
+    <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Roomname</mat-label>
+      <input matInput type="text" placeholder="Placeholder" formControlName="roomName">
+      <mat-icon matSuffix>meeting_room</mat-icon>
+    </mat-form-field>
+    </div>
+    <div class="add-room-control">
+      <button mat-mini-fab color="warn" (click)="onNoClick()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+      <button class="button-spacing" mat-raised-button color="primary" type="submit" [mat-dialog-close]="this.privateForm.value.roomName">
+        Create Room
+      </button>
+    </div>
+  </form>
+</div>

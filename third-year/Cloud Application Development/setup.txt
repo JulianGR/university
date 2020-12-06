@@ -1,0 +1,16 @@
+for the deployment.yaml, set up an internal ip of any of the nodes
+
+kubectl create namespace jitsi
+kubectl create secret generic jitsi-config -n jitsi --from-literal=JICOFO_COMPONENT_SECRET=test251 --from-literal=JICOFO_AUTH_PASSWORD=test251 --from-literal=JVB_AUTH_PASSWORD=test251
+kubectl create -f jvb-service.yaml
+kubectl create -f deployment.yaml
+kubectl create -f web-service.yaml
+
+
+
+
+docker run -p 4201:4200 timethethyme/cloud-frontend &
+
+docker run --net=host timethethyme/cloud-backend:latest &
+
+docker run --name could -p 27017:27017 -v /home/juliangr505/database:/data -d mongo &

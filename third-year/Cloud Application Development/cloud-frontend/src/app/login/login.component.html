@@ -1,0 +1,26 @@
+<div class="login-container">
+  <form class="center-form" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="username">
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Placeholder" formControlName="password">
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="login-form-controls">
+      <button mat-raised-button	color="primary" type="submit">
+        Login
+      </button>
+      <button class="button-spacing" mat-raised-button	type="button" (click)="navigateToRegistration()">
+        Register
+      </button>
+    </div>
+  </form>
+</div>

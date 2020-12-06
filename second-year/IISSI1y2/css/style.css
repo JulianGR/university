@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5 rem;
+    }
+}
+
+.bd-placeholder-img {
+    font-size: 1.125 rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*gradiente del fondo en */
+/* https://webgradients.com/ */
+/* https://mdbootstrap.com/docs/jquery/css/background-image/ */
+
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+#carouselIndicators {
+    width: 110vh;
+    margin: 0 auto;
+}
+
+/*foto principal y titulo*/
+.fotoPrincipal {
+    margin: 1% auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-top: 3%;
+    margin-right: auto;
+}
+/*Forms*/
+fieldset {
+    border: 1px solid #ddd !important;
+    margin: 0;
+    xmin-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding-left: 10px !important;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: 35%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ffffff;
+}
+/*Para los botones que no queremos que cuando se ponga el ratón encima tengan color y tape las letras*/
+.nohover:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #007bff;
+}
+
+/*Notas del JavaScript*/
+.suspenso {
+    color: #ff0000;
+}
+.aprobado {
+    color: #ff9900;
+}
+.notable {
+    color: #d0e200;
+}
+.sobresaliente {
+    color: #66ff33;
+}
+.botones {
+    display: inline-block;
+}
+
+/*Estas dos sirven para la paginación*/
+.numbersPeque {
+    width: 3em;
+}
+
+.paginacionMostrar {
+    float: right;
+}
+.fichaPersonalProfesor {
+    width: 18rem;
+}
+
+.gestionesAdmin{
+width: 12rem;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 123456789;
+}
+
+.footer-content {
+    text-align: center;
+    color: #ffffff;
+    height: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #24292e;
+    width: 100%;
+    position: fixed;
+    color: #ffffff;
+    text-shadow: 1px 1px #1a000d;
+    position: fixed;
+    z-index: 123456789;
+}

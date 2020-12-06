@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: mongodb
+  name: mongodb
+  namespace: jitsi
+spec:
+  ports:
+  - name: "http"
+    port: 27017
+    targetPort: 27017
+  selector:
+    k8s-app: jitsi
+  type: LoadBalancer
