@@ -1,0 +1,19 @@
+
+# BEGIN WordPress
+# Las directivas (líneas) entre `BEGIN WordPress` y `END WordPress` se generan dinámicamente
+# , y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirán.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /eucaliptos/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /eucaliptos/index.php [L]
+</IfModule>
+
+# END WordPress
+	# WP Increse Maximum Execution Time
+	<IfModule mod_php5.c>
+		php_value max_execution_time 300
+	</IfModule>

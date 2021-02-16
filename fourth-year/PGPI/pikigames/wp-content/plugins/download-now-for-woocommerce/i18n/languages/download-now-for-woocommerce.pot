@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: som-woocommerce-download-now.php:277
+msgid "WordPress Plugin"
+msgstr ""
+
+#: som-woocommerce-download-now.php:284
+msgid "Minimum PHP Version"
+msgstr ""
+
+#: som-woocommerce-download-now.php:295
+msgid "Missing Requirements"
+msgstr ""
+
+#: som-woocommerce-download-now.php:296
+msgctxt ""
+"This message is explaining that this plugin, called {plugin_name}, will not "
+"work without a list of requirements or dependencies."
+msgid "{plugin_name} will not work without the following requirements:"
+msgstr ""
+
+#: includes/somdn-download-page.php:82 woo-files/somdn-woo-quickview.php:124
+msgid "Only registered users can download this free product."
+msgstr ""
+
+#: includes/somdn-download-page.php:118 includes/somdn-shortcodes.php:90
+#: woo-files/somdn-woo-quickview.php:160
+msgid "Download Now"
+msgstr ""
+
+#: includes/somdn-download-page.php:126 includes/somdn-shortcodes.php:98
+#: woo-files/somdn-woo-quickview.php:168
+msgid "Download All"
+msgstr ""
+
+#: includes/somdn-download-page.php:133 includes/somdn-shortcodes.php:103
+#: woo-files/somdn-woo-quickview.php:175
+msgid "Download PDF"
+msgstr ""
+
+#: includes/somdn-download-page.php:145
+msgid "Download"
+msgstr ""
+
+#: includes/somdn-functions.php:461
+msgid "Available Downloads"
+msgstr ""
+
+#: includes/somdn-functions.php:463
+msgid "Available Downloads:"
+msgstr ""
+
+#: includes/somdn-functions.php:478
+msgid "Please select at least 1 checkbox"
+msgstr ""
+
+#: includes/somdn-functions.php:635 includes/somdn-functions.php:660
+msgid "Error 1: Invalid download key. Please try again."
+msgstr ""
+
+#: includes/somdn-functions.php:669
+msgid "Error 2: Invalid download key. Please try again."
+msgstr ""
+
+#: includes/somdn-functions.php:676
+msgid "Your download key has expired. Please try again."
+msgstr ""
+
+#: includes/somdn-functions.php:831 includes/somdn-functions.php:860
+#, php-format
+msgid "(Downloads - %s)"
+msgstr ""
+
+#: includes/somdn-functions.php:878
+msgid ""
+"If you need further support please visit the support forum for this plugin "
+"over at"
+msgstr ""
+
+#: includes/somdn-meta.php:38
+msgid "Allow free download"
+msgstr ""
+
+#: includes/somdn-meta.php:41
+msgid "Disallow free download"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:21
+msgid "General Settings"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:30
+msgid "Files"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:76
+msgid "Download Counts"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:102
+msgid "Button classes"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:110
+msgid "Button CSS"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:118
+msgid "Link classes"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:126
+msgid "Link CSS"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:138
+msgid "Single File Settings"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:145
+#: includes/somdn-plugin-settings.php:186
+msgid "Display method"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:153
+#: includes/somdn-plugin-settings.php:194
+msgid "Button text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:161
+msgid "Show filename"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:169
+msgid "Force ZIP"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:179
+msgid "Multiple File Settings"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:202
+msgid "File list text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:210
+msgid "Checkbox error text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:218
+msgid "Customise"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:236
+msgid "Owned Products Settings"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:243
+msgid "Include Purchased Products"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:256
+msgid "Button Text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:264
+msgid "Badge Text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:272
+msgid "Hide Badge"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:284
+msgid "PDF Viewer Settings"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:291
+msgid "Enable PDF Viewer"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:299
+msgid "Single file display"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:307
+msgid "Link/Button Text"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:319
+msgid "Debugging"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:326
+msgid "Debug Logging"
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:335
+msgid "Settings related to plugin debugging."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:357
+msgid "Customise the behaviour for products already purchased."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:375
+msgid "When enabled you will be able to customise this setting."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:433
+msgid "Customise the global plugin settings."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:693
+msgid "Customise how products with a single file are handled."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:772
+msgid ""
+"Your server does not have ZipArchive installed, therefore zipping free "
+"downloads won't work."
+msgstr ""
+
+#: includes/somdn-plugin-settings.php:1354
+msgid "Settings"
+msgstr ""
+
+#: templates/download-forms/multi-file-button-checkboxes.php:49
+msgid "Select All"
+msgstr ""
+
+#: woo-files/somdn-woo-compatibility.php:528 woo-files/somdn-woo-meta.php:17
+msgid "Free Downloads"
+msgstr ""
+
+#: woo-files/somdn-woo-compatibility.php:600
+msgid "WooCommerce Membership Settings"
+msgstr ""
+
+#: woo-files/somdn-woo-compatibility.php:607
+msgid "Restricted Products"
+msgstr ""
+
+#: woo-files/somdn-woo-compatibility.php:615
+msgid "Discount settings"
+msgstr ""
+
+#: woo-files/somdn-woo-compatibility.php:713
+msgid "Customise the experience for your WooCommerce Membership site."
+msgstr ""
+
+#: woo-files/somdn-woo-functions.php:332
+msgid "Download Again"
+msgstr ""
+
+#: woo-files/somdn-woo-functions.php:338
+msgid "(.zip)"
+msgstr ""
+
+#: woo-files/somdn-woo-functions.php:546
+msgid "OWNED!"
+msgstr ""
+
+#: woo-files/somdn-woo-quickview.php:29
+msgid "Quick View"
+msgstr ""
+
+#: woo-files/somdn-woo-quickview.php:320
+msgid "Read More"
+msgstr ""
+
+#: woo-files/somdn-woo-settings-support.php:803
+msgid "No error logs found."
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:77
+msgid "Shop Button Text"
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:145
+msgid ""
+"Enable the Quick View feature for shop listing pages. Quick View will apply "
+"to all products."
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:146
+msgid ""
+"Quick View allows users to preview a product without going to the product "
+"page, by clicking a \"Quick View\" button when hovering their mouse over a "
+"product in the shop."
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:147
+msgid ""
+"Note: This feature is currently in beta. Please report any issues you find."
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:157
+msgid "WooCommerce Quick View Settings"
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:164
+msgid "Enable Quick View"
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:176
+msgid "Button Settings"
+msgstr ""
+
+#: woo-files/somdn-woo-settings.php:219
+msgid "Note: When enabled you will be able to customise this feature."
+msgstr ""
