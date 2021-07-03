@@ -1,0 +1,33 @@
+dist: xenial
+
+services:
+  - postgresql
+addons:
+  postgresql: "9.4"
+before_script:
+  - psql -U postgres -c "create user decide password 'decide'"
+  - psql -U postgres -c "create database test_decide owner decide"
+  - psql -U postgres -c "ALTER USER decide CREATEDB"
+language: python
+python:
+  - "3.7"
+install:
+  - pip install -r requirements.txt
+  - pip install codacy-coverage
+script:
+  - cd decide
+  - python3 ./manage.py test voting --noinput
+notifications:
+  email:
+    recipients:      
+      - juliangr505@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  app: examen-egc-julgomrod
+  strategy: git
+  api_key:
+    secure: XXX
+  on:
+    branch: master
